@@ -13,9 +13,9 @@ var  catWalk = function(){
     if(parseInt(img.style.left) >= maxWidth)
     {
        // clearInterval(animate);
-        console.log(img.style.left);
+        img.style.webkitTransform ="scaleX(-1)";
+        img.style.msTransform="scaleX(-1)";
         img.style.transform = "scaleX(-1)";
-        console.log(img.style.left);
         animateright = setInterval(walkBack,100);
         clearInterval(animate);
     }
